@@ -13,6 +13,21 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+
+Route::get('/login', function () {
+    return view('Back.login');
+    //return view('Front.login');
+});
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('Front.layout.layout');
+    //return view('Front.login');
+});
+
+
+//Admin de la boda.
+Route::prefix('felixfelicis')->group(function() {
+    return view('Back.Layout.layout');
 });
