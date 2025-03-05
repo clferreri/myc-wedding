@@ -65,18 +65,6 @@
         <!-- end preloader -->
 
 
-        <!-- strat music-box -->
-        <div class="music-box">
-            <button class="music-box-toggle-btn">
-                <i class="fa fa-music"></i>
-            </button>
-
-            <div class="music-holder">
-                <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/326494474&amp;auto_play=true&amp;hide_related=true&amp;show_comments=false&amp;show_user=false&amp;show_reposts=false&amp;visual=false"></iframe>
-            </div>
-        </div>
-        <!-- end music box -->
-
 
         <!-- start of hero -->
         @include('Front.layout.home')
@@ -136,6 +124,22 @@
         <!-- start gallery-section -->
         <section class="gallery-section section-padding" id="gallery">
             <div class="container">
+                <div class="row">
+                    <div class="col col-xs-12">
+                        <div class="section-title">
+                            <div class="vertical-line"><span><i class="fi flaticon-two"></i></span></div>
+                            <h2>Galeria de Fotos</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col col-xs-12 text-center">
+                        <h3>Disponible luego de la Boda...</h3>
+                    </div>
+                </div>
+            </div>
+            {{-- <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="section-title">
@@ -210,34 +214,12 @@
                         </div>
                     </div>
                 </div> <!-- end row -->
-            </div> <!-- end container -->
+            </div> <!-- end container --> --}}
         </section>
         <!-- end gallery-section -->
 
         <!-- start getting-there-section -->
-        <section class="getting-there-section section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-xs-12">
-                        <div class="section-title-white">
-                            <div class="vertical-line"><span><i class="fi flaticon-two"></i></span></div>
-                            <h2>Getting there</h2>
-                        </div>
-                    </div>
-                </div> <!-- end section-title -->
-
-                <div class="row content">
-                    <div class="col col-lg-6">
-                        <h3>Transportation</h3>
-                        <p> industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</p>
-                    </div>
-                    <div class="col col-lg-6">
-                        <h3>Accommodations</h3>
-                        <p> industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</p>
-                    </div>
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </section>
+        @include('Front.layout.gettingThere')
         <!-- end getting-there-section -->
 
         <!-- start gift-registration-section -->
@@ -287,8 +269,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
-                        <h2>Forever And Always Our Love</h2>
-                        <span>- Mick (The groom)</span>
+                        <h2>Felices de comenzar esta nueva aventura juntos.</h2>
+                        {{-- <span>- Cris (El novio)</span> --}}
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->

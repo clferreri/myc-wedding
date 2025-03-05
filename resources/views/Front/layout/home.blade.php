@@ -1,16 +1,45 @@
-<section class="hero">
-    <div class="hero-slider hero-slider-s1">
-        <div class="slide-item">
-            <img src="{{asset('Front/img/1.jpg')}}" alt class="slider-bg">
-        </div>
+@php
+    $imagenesDesktop = [
+        asset('Front/img/slide/desktop/1.jpg'),
+        asset('Front/img/slide/desktop/2.jpg'),
+        asset('Front/img/slide/desktop/3.jpg'),
+        asset('Front/img/slide/desktop/4.jpg'),
+    ];
+    shuffle($imagenesDesktop);
 
-        <div class="slide-item">
-            <img src="{{asset('Front/img/slider/slide-2.jpg')}}" alt class="slider-bg">
-        </div>
+    $imagenesMobile = [
+        asset('Front/img/slide/mobile/1.jpeg'),
+        asset('Front/img/slide/mobile/2.jpeg')
+    ];
+    shuffle($imagenesMobile);
+@endphp
+
+
+
+
+<section class="hero">
+<!-- Slider para ESCRITORIO -->
+    <div class="hero-slider hero-slider-s1 d-none d-md-block">
+        @foreach ($imagenesDesktop as $imagen)
+            <div class="slide-item">
+                <img src="{{ $imagen }}" alt class="slider-bg">
+            </div>
+        @endforeach
+    </div>
+
+    <!-- Slider para MÓVILES -->
+    <div class="hero-slider hero-slider-s1 d-block d-md-none">
+        @foreach ($imagenesMobile as $imagen)
+            <div class="slide-item">
+                <img src="{{ $imagen }}" alt class="slider-bg">
+            </div>
+        @endforeach
     </div>
     <div class="wedding-announcement">
         <div class="couple-name-merried-text">
-            <h2 class="wow slideInUp" data-wow-duration="1s">Melissa &amp; Cristian</h2>
+            <h2 class="wow slideInUp d-none d-md-block" data-wow-duration="1s" style="margin-top:400px;">Melissa &amp; Cristian</h2>
+            <h2 class="wow slideInUp d-block d-md-none" data-wow-duration="1s" style="margin-top:200px;">Melissa &amp; Cristian</h2>
+            {{-- <h2 class="wow slideInUp" data-wow-duration="1s" style="margin-top:400px;">Melissa &amp; Cristian</h2> --}}
             <div class="married-text wow fadeIn" data-wow-delay="1s">
                 <h4 class="">
                 <span class=" wow fadeInUp" data-wow-delay="1.05s">N</span>
