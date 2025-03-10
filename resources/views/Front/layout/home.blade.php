@@ -1,11 +1,11 @@
 @php
     $imagenesDesktop = [
-        asset('Front/img/slide/desktop/1.jpg'),
         asset('Front/img/slide/desktop/2.jpg'),
+        asset('Front/img/slide/desktop/1.jpg'),
         asset('Front/img/slide/desktop/3.jpg'),
         asset('Front/img/slide/desktop/4.jpg'),
     ];
-    shuffle($imagenesDesktop);
+    //shuffle($imagenesDesktop);
 
     $imagenesMobile = [
         asset('Front/img/slide/mobile/1.jpeg'),

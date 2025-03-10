@@ -25,7 +25,7 @@
     <!-- Icon fonts -->
     <link href="{{asset('Front/css/font-awesome.min.css')}}" rel="stylesheet">
     <link href="{{asset('Front/css/flaticon.css')}}" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    {{-- <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script> --}}
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('Front/css/bootstrap.min.css')}}" rel="stylesheet">
@@ -65,6 +65,10 @@
         <!-- end preloader -->
 
 
+        <div>
+            <audio id="player" controls></audio>
+            <button id="playButton">🎵</button>
+        </div>
 
         <!-- start of hero -->
         @include('Front.layout.home')
@@ -229,20 +233,21 @@
                     <div class="col-xs-12">
                         <div class="section-title">
                             <div class="vertical-line"><span><i class="fi flaticon-two"></i></span></div>
-                            <h2>Gift registration</h2>
+                            <h2>Regalos</h2>
                         </div>
                     </div>
                 </div> <!-- end section-title -->
 
                 <div class="row content justify-content-center">
                     <div class="col-lg-10">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, cupiditate, repudiandae. A ab sit laboriosam quis distinctio dignissimos, nemo cum sed hic, deleniti maiores rem iste labore commodi perferendis cumque.repudiandae. A ab sit laboriosam quis distinctio dignissimos, nemo cum sed hic.</p>
+                        <p>Nos hace mucha ilusión compartir este momento tan especial con todos ustedes. Si deseas obsequiarnos algo, estamos aceptando transferencias de cualquier monto y moneda para ayudarnos a comenzar nuestra nueva vida juntos. Puedes hacer tu aporte a la siguiente cuenta:</p>
 
-                        <div class="gif-registration-slider">
-                            <div class="register">
-                                <img src="images/gift/img-1.jpg" alt class="img img-fluid">
+                        {{-- <div class="gif-registration-slider"> --}}
+                            <div class="col-md-5 text-center m-auto">
+                                <img src="{{asset('Front/img/bbva-logo.png')}}" alt class="img img-fluid" style="max-width: 200px;">
+                                <p style="font-weight: bold;">25080296</p>
                             </div>
-                            <div class="register">
+                            {{-- <div class="register">
                                 <img src="images/gift/img-2.jpg" alt class="img img-fluid">
                             </div>
                             <div class="register">
@@ -253,8 +258,9 @@
                             </div>
                             <div class="register">
                                 <img src="images/gift/img-2.jpg" alt class="img img-fluid">
-                            </div>
-                        </div>
+                            </div> --}}
+                        {{-- </div> --}}
+                        <p>Apreciamos mucho tu generosidad y, sobre todo, tu presencia en nuestro gran día. ¡Tu compañía es el mejor regalo que podríamos recibir!</p>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
@@ -292,5 +298,56 @@
 
     <!-- Custom script for this template -->
     <script src="{{asset('Front/js/script.js')}}"></script>
+
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function () {
+            let playlist = [
+                "https://bodameliycris.com/Front/audio/eyes.mp3",
+                "https://bodameliycris.com/Front/audio/eyes.mp3"
+            ];
+
+            let audio = document.getElementById("player");
+            let hasPlayed = false; // Flag para evitar múltiples ejecuciones
+
+            function playRandom() {
+                let randomIndex = Math.floor(Math.random() * playlist.length);
+                audio.src = playlist[randomIndex];
+                audio.play().catch(error => console.log("Autoplay bloqueado"));
+            }
+
+            function enableAudioOnFirstInteraction() {
+                playRandom();
+                document.removeEventListener("click", enableAudioOnFirstInteraction);
+                document.removeEventListener("scroll", enableAudioOnFirstInteraction);
+                document.removeEventListener("mousemove", enableAudioOnFirstInteraction);
+                audio.style.display = "block"; // Muestra el reproductor
+                playButton.style.display = "none"; // Oculta el botón
+            }
+
+            document.addEventListener("click", enableAudioOnFirstInteraction, { once: true });
+            document.addEventListener("scroll", enableAudioOnFirstInteraction, { passive: true });
+            document.addEventListener("mousemove", enableAudioOnFirstInteraction, { once: true });
+        });
+
+        document.addEventListener("click", function () {
+            setTimeout(() => {
+                document.getElementById("player").play();
+            }, 500);
+        }, { once: true });
+
+        document.addEventListener("scroll", function () {
+            setTimeout(() => {
+                document.getElementById("player").play();
+            }, 500);
+        }, { once: true });
+
+        document.addEventListener("mousemove", function () {
+            setTimeout(() => {
+                document.getElementById("player").play();
+            }, 500);
+        }, { once: true });
+    </script>
+
 </body>
 </html>

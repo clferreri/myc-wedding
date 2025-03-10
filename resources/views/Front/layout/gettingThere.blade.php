@@ -20,7 +20,9 @@
             <div class="col col-lg-5">
                 <h3>Ubicaciòn</h3>
                 <div class="col col-lg-10">
+                <a href="https://www.google.com/maps/place/Chacra+Tradition/@-34.83769,-56.3329045,17z/data=!3m1!4b1!4m6!3m5!1s0x95a1d6d16fb3dbf7:0xb5ad7496fe77bf61!8m2!3d-34.8376944!4d-56.3303296!16s%2Fg%2F1hm52jl9z?entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">
                 <img src="{{asset('Front/img/mapa.png')}}" alt="Mapa de la chacra" class="img img-fluid" />
+                </a>
                 </div>
                 <a class="see-location-btn popup-gmaps" href="https://www.google.com/maps/place/Chacra+Tradition/@-34.83769,-56.3329045,17z/data=!3m1!4b1!4m6!3m5!1s0x95a1d6d16fb3dbf7:0xb5ad7496fe77bf61!8m2!3d-34.8376944!4d-56.3303296!16s%2Fg%2F1hm52jl9z?entry=ttu&g_ep=EgoyMDI1MDMwMi4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D" target="_blank">
                     <i class="fa fa-map-marker "></i> Ver Ubicacion <i class="fa fa-angle-right"></i>
