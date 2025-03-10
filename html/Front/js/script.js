@@ -603,16 +603,16 @@
 
             sliderBgSetting();
 
-            toggleMobileNavigation();
+            //toggleMobileNavigation();
 
-            smallNavFunctionality();
+            //smallNavFunctionality();
 
             //set the couple section groom bride two col equal height
             if($(".wedding-couple-section").length) {
                 setTwoColEqHeight($(".wedding-couple-section .gb .img-holder"), $(".wedding-couple-section .gb .details"));
             }
 
-            smoothScrolling($("#navbar > ul > li > a[href^='#']"), $(".header-style-1 .navigation").innerHeight());
+            //smoothScrolling($("#navbar > ul > li > a[href^='#']"), $(".header-style-1 .navigation").innerHeight());
 
         });
 
@@ -625,7 +625,7 @@
 
         bgParallax();
 
-        activeMenuItem($(".navigation-holder"));
+        //activeMenuItem($(".navigation-holder"));
 
         if ($(".header-style-1").length) {
             stickIt($(".sticky"), "sticky-on", $(".header-style-1 .navbar").offset().top);
@@ -653,13 +653,13 @@
         WHEN WINDOW RESIZE
     ==========================================================================*/
     $(window).on("resize", function() {
-        toggleClassForSmallNav();
+        //toggleClassForSmallNav();
         //smallNavFunctionality();
 
         clearTimeout($.data(this, 'resizeTimer'));
-        $.data(this, 'resizeTimer', setTimeout(function() {
-            smallNavFunctionality();
-        }, 200));
+        // $.data(this, 'resizeTimer', setTimeout(function() {
+        //     smallNavFunctionality();
+        // }, 200));
     });
 
 
