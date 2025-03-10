@@ -83,7 +83,7 @@
         <!-- end wedding-couple-section -->
 
         <!-- start count-down-section -->
-        <section class="count-down-section section-padding parallax" data-bg-image="{{asset('Front/img/dijo-si.jpg')}}" data-speed="7">
+        <section class="count-down-section section-padding parallax" data-bg-image="" data-speed="7">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
@@ -106,11 +106,14 @@
         <!-- end story-section -->
 
         <!-- start cta -->
-        <section class="cta section-padding parallax" data-bg-image="images/cta-bg.jpg" data-speed="7">
+        <section class="cta section-padding parallax" data-bg-image="{{asset('Front/img/dijo-si.jpg')}}" data-speed="7">
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
+                        <br/>
                         <h2><span>Vamos a...</span> Celebrar Nuestro Amor</h2>
+                        <br/>
+                        <br/>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
@@ -301,10 +304,17 @@
 
     <script>
 
+        $('.hero-slider').slick({
+            autoplay: true,
+            autoplaySpeed: 9000,
+            dots: true,
+            fade: true,
+        });
+
         document.addEventListener("DOMContentLoaded", function () {
             let playlist = [
                 "https://bodameliycris.com/Front/audio/eyes.mp3",
-                "https://bodameliycris.com/Front/audio/eyes.mp3"
+                "https://bodameliycris.com/Front/audio/magic.mp3"
             ];
 
             let audio = document.getElementById("player");
