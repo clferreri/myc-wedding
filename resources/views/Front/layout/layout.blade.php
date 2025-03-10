@@ -83,7 +83,7 @@
         <!-- end wedding-couple-section -->
 
         <!-- start count-down-section -->
-        <section class="count-down-section section-padding parallax" data-bg-image="images/countdown-bg.jpg" data-speed="7">
+        <section class="count-down-section section-padding parallax" data-bg-image="{{asset('Front/img/dijo-si.jpg')}}" data-speed="7">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-4">
@@ -240,7 +240,7 @@
 
                 <div class="row content justify-content-center">
                     <div class="col-lg-10">
-                        <p>Nos hace mucha ilusión compartir este momento tan especial con todos ustedes. Si deseas obsequiarnos algo, estamos aceptando transferencias de cualquier monto y moneda para ayudarnos a comenzar nuestra nueva vida juntos. Puedes hacer tu aporte a la siguiente cuenta:</p>
+                        <p>Nuestro mejor regalo es poder compartir este momento tan especial con cada uno de ustedes, sin embargo, si es su deseo y posibilidad hacernos otro obsequio, les dejamos nuestra cuenta bancaria donde pueden colaborar con nuestra luna de miel 💕</p>
 
                         {{-- <div class="gif-registration-slider"> --}}
                             <div class="col-md-5 text-center m-auto">
@@ -260,7 +260,7 @@
                                 <img src="images/gift/img-2.jpg" alt class="img img-fluid">
                             </div> --}}
                         {{-- </div> --}}
-                        <p>Apreciamos mucho tu generosidad y, sobre todo, tu presencia en nuestro gran día. ¡Tu compañía es el mejor regalo que podríamos recibir!</p>
+                        <p>Apreciamos mucho tu generosidad y, sobre todo, tu presencia en nuestro gran día.</p>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
@@ -342,11 +342,11 @@
             }, 500);
         }, { once: true });
 
-        document.addEventListener("mousemove", function () {
-            setTimeout(() => {
-                document.getElementById("player").play();
-            }, 500);
-        }, { once: true });
+        // document.addEventListener("mousemove", function () {
+        //     setTimeout(() => {
+        //         document.getElementById("player").play();
+        //     }, 500);
+        // }, { once: true });
     </script>
 
 </body>

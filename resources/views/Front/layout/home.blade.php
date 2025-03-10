@@ -37,10 +37,10 @@
     </div>
     <div class="wedding-announcement">
         <div class="couple-name-merried-text">
-            <h2 class="wow slideInUp d-none d-md-block" data-wow-duration="1s" style="margin-top:400px;">Melissa &amp; Cristian</h2>
+            <h2 class="wow slideInUp d-none d-md-block" data-wow-duration="1s" style="margin-top:320px;">Melissa &amp; Cristian</h2>
             <h2 class="wow slideInUp d-block d-md-none" data-wow-duration="1s" style="margin-top:200px;">Melissa &amp; Cristian</h2>
             {{-- <h2 class="wow slideInUp" data-wow-duration="1s" style="margin-top:400px;">Melissa &amp; Cristian</h2> --}}
-            <div class="married-text wow fadeIn" data-wow-delay="1s">
+            {{-- <div class="married-text wow fadeIn" data-wow-delay="1s">
                 <h4 class="">
                 <span class=" wow fadeInUp" data-wow-delay="1.05s">N</span>
                 <span class=" wow fadeInUp" data-wow-delay="1.11s">o</span>
@@ -55,12 +55,12 @@
                 <span class=" wow fadeInUp" data-wow-delay="1.59s">s</span>
 
                 </h4>
-            </div>
+            </div> --}}
             <!-- <i class="fa fa-heart"></i> -->
         </div>
 
         <div class="save-the-date">
-            <h4>Save the date</h4>
+            <h4>Nos casamos</h4>
             <span class="date">09 MAY 2025</span>
         </div>
     </div>

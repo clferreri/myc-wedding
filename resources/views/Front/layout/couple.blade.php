@@ -1,9 +1,9 @@
 <section class="wedding-couple-section section-padding" id="couple">
     <div class="container">
         <div class="row">
-            <div class="col col-xs-12 text-center">
+            {{-- <div class="col col-xs-12 text-center">
                 <h2>Seccion de pareja en construccion... 🏗️</h2>
-            </div>
+            </div> --}}
             {{-- <div class="col col-xs-12">
                 <div class="gb groom">
                     <div class="img-holder wow fadeInLeftSlow">
